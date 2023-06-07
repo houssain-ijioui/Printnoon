@@ -1,0 +1,12 @@
+<nav>
+  <div class="links">
+      <a href="#"><img id="logo" src="./images/logo.png" alt="logo"></a>
+      <a id="link-s" href="#">Tableau</a>
+      <a id="link-s" href="#">Orders</a>
+  </div>
+  <% if (locals.profileImageUrl) { %>
+      <img id="profile-img" src="<%= profileImageUrl %>" alt="profile picture">
+  <% } else { %>
+      <img id="profile-img" src="/images/user-profile-icon-free-vector.jpg" alt="profile picture">
+  <% } %>
+</nav>

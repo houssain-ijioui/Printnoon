@@ -1,0 +1,41 @@
+<%- include('body-up') %>
+<%- include('navbar') %>
+
+
+<form action="/auth/logout" method="post">
+    <button type="submit" class="btn btn-danger">Logout</button>
+</form>
+
+
+<div class="container">
+    <%- include('sidebar') %>
+    <div class="settings">
+        <h1>Paramètres du compte</h1>
+        <h6>Informations personnelles</h6>
+        <hr>
+        <form action="/edit/image" method="post" enctype="multipart/form-data">
+            <label>Profile Photo</label>
+            <input type="file" name="image" required>
+            <i class="fa fa-pencil"></i>
+            <button type="submit">changer</button>
+        </form>
+        <form action="#" >
+                <label for="">Nom et Prénom</label>
+                <input type="text" value="<%= user.firstName %> <%= user.lastName %>">
+                <i class="fa fa-pencil"></i>
+                <button type="submit">changer</button>
+        </form>
+        <form action="#">
+                <label for="">Téléphone Mobile</label>
+                <input type="number" value="<%= user.userName %>">
+                <i class="fa fa-pencil"></i>
+                <button type="submit">changer</button>
+        </form>
+        <div>
+            <small>Supprimer le compte</small>
+            <a id="unactivate" href="#">Désactiver</a>
+        </div>
+    </div>
+</div>
+    
+<%- include('body-down') %>

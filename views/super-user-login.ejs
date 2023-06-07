@@ -1,0 +1,18 @@
+<%- include('body-up') %>
+<%- include('navbar') %>
+
+
+
+<form action="/super/auth/login" method="post" style="margin: 200px 0 0 350px;">
+    <div style="margin-bottom: 20px;">
+        <label for="email">Email:</label>
+            <input required type="email" name="email">
+    </div>
+    <div style="margin-bottom: 20px;">
+        <label for="password">Pawssord:</label>
+        <input id="password" required type="password" name="password" value="AZERTY">
+    </div>
+    <button id="login" type="submit" class="btn btn-primary">Log In</button>
+</form>
+
+<%- include('body-down') %>

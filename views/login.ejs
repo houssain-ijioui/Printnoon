@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/log-css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <title><%= pageTitle %></title>
+</head>
+<body>
+    <div class="left">
+        <h1>Emballage de fole digne de ce nom, trie !</h1>
+        <h4>Connectez-vous pour suiver vos conceptions et vos commandes, le tout en un seul endroit.</h4>
+        <small>Nouveau ?  <a href="/auth/signup" class="local">S’inscrire</a></small>
+        <br>
+        <br>
+        <div class="btn">
+            <img src="/images/image 2.png" alt="">
+            <a href="/auth/google" class="google">Se connecter avec google</a>
+        </div>
+        <div class="group">
+            <hr>
+            <span id="ou">Ou</span>
+            <hr>
+        </div>
+        <form action="/auth/login" method="post">
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" placeholder="Mot de passe" name="password" required>
+            <button id="login" type="submit">Login</button>
+        </form>
+        <a class="last" href="/auth/reset-password">Mot de passe oublier ?</a>
+    </div>
+    <div class="right">
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<%- include('body-up') %>
+<%- include('navbar') %>
+
+
+<form action="/auth/logout" method="post">
+    <button type="submit" class="btn btn-danger">Logout</button>
+</form>
+
+
+<div class="container">
+    <%- include('sidebar') %>
+</div>
+
+<% if (locals.data) { %>
+    <table class="table">
+        <thead>
+            <tr>
+            <th scope="col">Quantity</th>
+            <th scope="col">Adresse</th>
+            <th scope="col">Support Type</th>
+            <th scope="col">File</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for (const order of data) { %>
+                <tr>
+                    <th><%= order.order.quantity %></th>
+                    <td><%= order.order.adresse %></td>
+                    <td><%= order.order.supportType %></td>
+                    <td><a target="_blank" href="<%= order.url %>">Open</a></td>
+                </tr> 
+            <% } %>
+        </tbody>
+    </table>
+<% } else { %>
+    <h1>No Orders Yet</h1>
+<% } %>
+
+<%- include('body-down') %>

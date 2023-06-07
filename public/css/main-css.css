@@ -1,0 +1,186 @@
+* {
+    font-family: 'Golos Text', sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid#BBD7ED;
+    height: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    align-items: center;
+}
+
+nav #logo {
+    width: 139px;
+    height: 30px;
+}
+
+nav #profile-img {
+    width: 31px;
+    height: 31px;
+    cursor: pointer;
+}
+
+nav .links {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+nav .links a {
+    margin-right: 40px;
+}
+
+nav #link-s {
+    text-decoration: none;
+    color: #001629;
+}
+
+nav #link-s:hover {
+    text-decoration: underline;
+}
+
+/*  */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container #img-one {
+    width: 50px;
+    height: 50px;
+}
+
+.container #img-two {
+    width: 70px;
+    height: 70px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.side-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.profile-info div {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#name {
+    color: #004680;
+    font-style: italic;
+    font-size: 13px;
+    margin: 0;
+}
+
+#level {
+    color: #8999A3;
+    font-size: 11px;
+    margin: 0;
+}
+
+.side-links a {
+    text-decoration: none;
+    color: #001629;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 10px 0 10px 0;
+    padding: 5px 10px 5px 10px;
+    border-radius: 6px;
+}
+
+.side-links a:hover {
+    text-decoration: underline;
+}
+
+#selected {
+    background-color: #BBD7ED;
+}
+
+.bottom {
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.bottom a {
+    text-decoration: none;
+    color: #001629;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.bottom a:hover {
+    text-decoration: underline;
+}
+
+.settings {
+    margin-left: 50px;
+}
+
+.settings form {
+    margin: 14px 0;
+}
+
+.settings form label {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.settings form input {
+    border: none;
+    color: #004680;
+    font-weight: 600;
+}
+
+.settings form button {
+    background-color: #004680;
+    color: white;
+    font-size: 11px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px 15px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.settings form i {
+    color: white;
+    position: relative;
+    left: 21px;
+    font-size: 11px;
+}
+
+#unactivate {
+    color: #004680;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+
+#img-one, #profile-img {
+    border-radius: 50%;
+}

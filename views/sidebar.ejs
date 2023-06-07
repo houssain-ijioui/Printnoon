@@ -1,0 +1,24 @@
+<div class="sidebar">
+    <div class="profile-info">
+        <% if (locals.profileImageUrl) { %>
+            <img id="img-one" src="<%= profileImageUrl %>" alt="profile picture">
+        <% } else { %>
+            <img id="img-one" src="/images/user-profile-icon-free-vector.jpg" alt="profile picture">
+        <% } %>
+        <div>
+            <h2 id="name"> <%= user.firstName %> <%= user.lastName %></h2>
+            <h5 id="level"><%= user.source %></h5>
+        </div>
+    </div>
+    <div class="side-links">
+        <a href="#">Mes Conceptions</a>
+        <a href="/my-orders">Les Commandes</a>
+        <a href="#">Mes Services Graphique</a>
+        <a href="#">Paiement et Livraison</a>
+        <a href="#" id="selected">Paramètres du Compte</a>
+    </div>
+    <div class="bottom">
+        <i class="fa fa-sign-out"></i>
+        <a href="#">Se déconnecter</a>
+    </div>
+</div>

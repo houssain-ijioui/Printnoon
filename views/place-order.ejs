@@ -1,0 +1,31 @@
+<%- include('body-up') %>
+<%- include('navbar') %>
+
+<h2>Place Order:</h2>
+
+<form action="/place-order" method="post" enctype="multipart/form-data">
+    <div>
+        <label>PDF File:</label>
+        <input type="file" name="file" required>
+    </div>
+    <div>
+        <label>Quantity:</label>
+        <input type="number" name="quantity" required>
+    </div>
+    <div>
+        <label>Adresse:</label>
+        <input type="text" name="adresse" required>
+    </div>
+    <div>
+        <label>Support Type:</label>
+        <select name="supportType" required>
+            <option value="paper">Paper</option>
+            <option value="high-quality-paper">High Quality Paper</option>
+            <option value="plastic">Plastic</option>
+        </select>
+    </div>
+
+    <button class="btn btn-primary">Place</button>
+</form>
+
+<%- include('body-down') %>
